@@ -2,7 +2,10 @@
 
 Backend service for the Bitespeed Identity Reconciliation assignment.
 
+Live Deployment: https://bite-speed-api.onrender.com (/ for health check and /identify for backend service endpoint)
+
 ## Tech Stack
+
 - Node.js
 - Express.js
 - PostgreSQL
@@ -13,19 +16,21 @@ Backend service for the Bitespeed Identity Reconciliation assignment.
 POST /identify
 
 ### Request
+
 {
-  "email": "doc@flux.com",
-  "phoneNumber": "999"
+"email": "doc@flux.com",
+"phoneNumber": "999"
 }
 
 ### Response
+
 {
-  "contact": {
-    "primaryContatctId": 7,
-    "emails": ["doc@flux.com","doc2@flux.com"],
-    "phoneNumbers": ["999","888"],
-    "secondaryContactIds": [8,9]
-  }
+"contact": {
+"primaryContatctId": 7,
+"emails": ["doc@flux.com","doc2@flux.com"],
+"phoneNumbers": ["999","888"],
+"secondaryContactIds": [8,9]
+}
 }
 
 ## How to Run Locally
